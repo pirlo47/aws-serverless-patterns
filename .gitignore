@@ -1,0 +1,62 @@
+# --- Serverless Framework / AWS Specific ---
+# Serverless Framework build directory (usually named `.serverless` by default)
+.serverless/
+.serverless_plugins/
+
+# AWS SAM (Serverless Application Model) build/output folders
+.aws-sam/
+samconfig.toml # Contains environment-specific configurations
+
+# AWS CDK (Cloud Development Kit) build/output folders
+cdk.out/
+.cdk/
+
+
+
+# --- Environment Secrets and Configuration Files ---
+# Crucial for security - always ignore files that hold environment variables or keys!
+.env
+.env.local
+.env.*.local
+config.local.json
+secrets.json
+credentials.json
+# Potential credentials/configuration files from various AWS tools
+~/.aws/
+config
+credentials
+
+# --- Dependency and Build Artifacts (General) ---
+# Node.js artifacts
+node_modules
+dist/
+build/
+coverage/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+package-lock.json # unless you explicitly want to commit it
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyd
+*.so
+.Python
+venv/
+env/
+pip-log.txt
+
+# --- Operating System and Editor Artifacts ---
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# General text editor backups
+*~
+# ---
